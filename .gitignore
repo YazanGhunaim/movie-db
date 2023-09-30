@@ -1,2 +1,6 @@
 .DS_Store
+
+
+#constants file
 movieDB/Utils/Constants.swift
+

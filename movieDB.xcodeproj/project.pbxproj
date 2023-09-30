@@ -21,7 +21,7 @@
 		EAA0724F2AC81FB500C71AD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAA072522AC81FB500C71AD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EAA072612AC826CF00C71AD7 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
-		EAA072632AC8280A00C71AD7 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		EAA072642AC82B0500C71AD7 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +38,7 @@
 		EAA0723F2AC81FB200C71AD7 = {
 			isa = PBXGroup;
 			children = (
+				EAA072642AC82B0500C71AD7 /* Config.xcconfig */,
 				EAA0724A2AC81FB200C71AD7 /* movieDB */,
 				EAA072492AC81FB200C71AD7 /* Products */,
 			);
@@ -62,7 +63,6 @@
 				EAA0725C2AC823C500C71AD7 /* Utils */,
 				EAA072512AC81FB500C71AD7 /* Preview Content */,
 				EAA0724F2AC81FB500C71AD7 /* Assets.xcassets */,
-				EAA072632AC8280A00C71AD7 /* Config.xcconfig */,
 			);
 			path = movieDB;
 			sourceTree = "<group>";
@@ -217,7 +217,7 @@
 /* Begin XCBuildConfiguration section */
 		EAA072542AC81FB500C71AD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EAA072632AC8280A00C71AD7 /* Config.xcconfig */;
+			baseConfigurationReference = EAA072642AC82B0500C71AD7 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -281,7 +281,7 @@
 		};
 		EAA072552AC81FB500C71AD7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EAA072632AC8280A00C71AD7 /* Config.xcconfig */;
+			baseConfigurationReference = EAA072642AC82B0500C71AD7 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -338,7 +338,7 @@
 		};
 		EAA072572AC81FB500C71AD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EAA072632AC8280A00C71AD7 /* Config.xcconfig */;
+			baseConfigurationReference = EAA072642AC82B0500C71AD7 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -368,7 +368,7 @@
 		};
 		EAA072582AC81FB500C71AD7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EAA072632AC8280A00C71AD7 /* Config.xcconfig */;
+			baseConfigurationReference = EAA072642AC82B0500C71AD7 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -13,25 +13,18 @@ struct FeaturedMoviesView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 20){
             
-            // title and see all button
+            /// title and see all button
             header
             
-            // featured movies scrollable list
-            ScrollView {
-                LazyVStack {
-                    ForEach(viewModel.movies, id: \.id) { movie in
-                        MovieCell(movie: movie)
-                            .padding(.vertical,2.5)
-                    }
+            /// featured movies 
+            LazyVStack {
+                ForEach(viewModel.movies, id: \.id) { movie in
+                    MovieCell(movie: movie)
+                        .padding(.vertical,2.5)
                 }
             }
-            .scrollIndicators(.hidden)
         }
     }
-}
-
-#Preview {
-    FeaturedMoviesView()
 }
 
 extension FeaturedMoviesView {
@@ -47,4 +40,8 @@ extension FeaturedMoviesView {
                 .bold()
         }
     }
+}
+
+#Preview {
+    FeaturedMoviesView()
 }

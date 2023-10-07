@@ -4,3 +4,5 @@
 #constants file
 movieDB/Utils/Constants.swift
 
+#.plist
+movieDB/GoogleService-Info.plist

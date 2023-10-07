@@ -10,7 +10,7 @@ import Foundation
 extension String {
     func convertToShortDateFormat() -> Date {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd-MM-yyyy" // Original format
+        dateFormatter.dateFormat = "yyyy-MM-dd" // Original format
         return dateFormatter.date(from: self) ?? Date.now
     }
 }

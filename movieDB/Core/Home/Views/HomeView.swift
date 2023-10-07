@@ -8,16 +8,28 @@
 import SwiftUI
 
 struct HomeView: View {
+    @EnvironmentObject var viewModel: AuthViewModel
+    
     var body: some View {
-        NavigationStack {
-            VStack {
-                ButtonCardsView()
-                
-                FeaturedMoviesView()
+        if let user = viewModel.currentUser {
+            NavigationStack {
+                ScrollView {
+                    VStack {
+                        HomeHeaderView(userName: user.fullname)
+                        
+                        NowShowingMoviesView()
+                            .scrollIndicators(.visible)
+                        
+                        ButtonCardsView()
+                        
+                        FeaturedMoviesView()
+                            .padding(.horizontal)
+                    }
+                }
+                .scrollIndicators(.hidden)
             }
-            .padding()
-            .ignoresSafeArea()
-            
+        } else {
+            ProgressView()
         }
     }
 }

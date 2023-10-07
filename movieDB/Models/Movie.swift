@@ -20,12 +20,21 @@ struct Movie: Codable {
     let voteCount: Int
     let voteAverage: Double
     let title, brief, posterPath, releaseDate : String
-    let genreIDs: [Int]
     let adult: Bool
+    
+    var formattedDate: String {
+        return self.releaseDate.convertToShortDateFormat().formatted(.dateTime.day().month().year())
+    }
+    
+    var rating: Double {
+        voteAverage / 2
+    }
     
     // MARK: Optionals ( gotten with movie details )
     let runtime: Int?
+    let genreIDs: [Int]?
     let genres: [Genre]?
+    let credits: Credits?
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -34,16 +43,33 @@ struct Movie: Codable {
         
         // optionals
         case runtime
+        case genreIDs = "genre_ids"
         case genres
+        case credits
         // optionals
         
         case voteAverage = "vote_average"
         case voteCount = "vote_count"
-        case genreIDs = "genre_ids"
         case brief = "overview"
         case posterPath = "poster_path"
         case releaseDate = "release_date"
     }
+}
+
+struct Cast: Codable {
+    let id: Int
+    let name: String
+    let profilePath: String?
+
+    enum CodingKeys: String, CodingKey {
+        case  id
+        case name
+        case profilePath = "profile_path"
+    }
+}
+
+struct Credits: Codable {
+    let cast, crew: [Cast]
 }
 
 struct Genre: Codable {

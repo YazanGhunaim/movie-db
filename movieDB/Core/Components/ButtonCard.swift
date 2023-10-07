@@ -11,25 +11,27 @@ struct ButtonCard: View {
     let image: String
     let title: String
     
+    /// Control Colors
     var isSelected = false
     
     var body: some View {
         Button {
-            // no action
+            /// no action
         } label: {
-            VStack(spacing: 25) {
+            VStack(spacing: 0) {
                 
                 // MARK: SF Symbol
-                Image(systemName: image)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 30, height: 30)
-                    .tint(.indigo)
-                    .background(
-                        Circle()
-                            .fill(.white)
-                            .frame(width: 50, height: 75)
+                Circle()
+                    .foregroundStyle(.white)
+                    .frame(width: 50, height: 75)
+                    .overlay (
+                        Image(systemName: image)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 30, height: 30)
+                            .foregroundStyle(.indigo.gradient)
                     )
+                
                 
                 // MARK: Text under symbol
                 Text(title)
@@ -38,7 +40,7 @@ struct ButtonCard: View {
             }
             .frame(width: 100, height: 125)
             .background(isSelected ? .indigo : .buttonCardBackground)
-            .clipShape(RoundedRectangle(cornerRadius: 25))
+            .clipShape(.rect(cornerRadius: 25))
         }
     }
 }

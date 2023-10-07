@@ -1,0 +1,8 @@
+.DS_Store
+
+
+#constants file
+movieDB/Utils/Constants.swift
+
+#.plist
+movieDB/GoogleService-Info.plist

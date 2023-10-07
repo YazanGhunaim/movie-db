@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA1EA78F2AD1AE6A004F632F /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1EA78E2AD1AE6A004F632F /* TabBarView.swift */; };
 		EA7457B02AD1547100EAC158 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7457AF2AD1547100EAC158 /* AuthViewModel.swift */; };
 		EA7457B82AD166F200EAC158 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7457B72AD166F200EAC158 /* TabBar.swift */; };
-		EA7457BC2AD1692D00EAC158 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7457BB2AD1692D00EAC158 /* TabBarView.swift */; };
 		EA8E718D2AD1431000BF39D3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8E718C2AD1431000BF39D3 /* LoginView.swift */; };
 		EA8E718F2AD1449800BF39D3 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8E718E2AD1449800BF39D3 /* InputView.swift */; };
 		EA8E71912AD1486D00BF39D3 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8E71902AD1486D00BF39D3 /* RegistrationView.swift */; };
@@ -76,9 +76,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA1EA78E2AD1AE6A004F632F /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		EA7457AF2AD1547100EAC158 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		EA7457B72AD166F200EAC158 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
-		EA7457BB2AD1692D00EAC158 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarView.swift; path = ../../../../../../TabBarView.swift; sourceTree = "<group>"; };
 		EA8E718C2AD1431000BF39D3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		EA8E718E2AD1449800BF39D3 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		EA8E71902AD1486D00BF39D3 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
@@ -175,7 +175,7 @@
 		EA7457BA2AD1692200EAC158 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EA7457BB2AD1692D00EAC158 /* TabBarView.swift */,
+				EA1EA78E2AD1AE6A004F632F /* TabBarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -596,10 +596,10 @@
 				EAC259232AD18031002600E7 /* SearchView.swift in Sources */,
 				EAB53C732AC8679E006A53FD /* MovieCell.swift in Sources */,
 				EAB53CA82ACA02B7006A53FD /* BackButton.swift in Sources */,
+				EA1EA78F2AD1AE6A004F632F /* TabBarView.swift in Sources */,
 				EAB53C752AC869EB006A53FD /* Colors.swift in Sources */,
 				EAC2591B2AD17686002600E7 /* TabBarViewModel.swift in Sources */,
 				EAA0724C2AC81FB200C71AD7 /* movieDBApp.swift in Sources */,
-				EA7457BC2AD1692D00EAC158 /* TabBarView.swift in Sources */,
 				EA7457B82AD166F200EAC158 /* TabBar.swift in Sources */,
 				EAB53CA22AC9F115006A53FD /* MovieDetailsView.swift in Sources */,
 				EAB53CA42AC9F126006A53FD /* MovieDetailsViewModel.swift in Sources */,
